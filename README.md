@@ -1,6 +1,6 @@
 # Harness² × Super-agent：OpenCode / Codex PoC
 
-通过同一套任务快照、Harness² 优化流程和独立验收入口，选择 OpenCode 或 Codex 执行任务。Super-agent Worker 可以通过已有的 `bash` 工具调用它。本项目是 CLI PoC，没有 HTTP 服务，也不会自动发布候选配置或代码。
+连接 Harness²、Super-agent 与 OpenCode／Codex 的命令行 PoC，提供统一任务执行、四文件 Harness 优化、原生轨迹记录和候选配置独立验收；不会自动发布配置或代码。
 
 ```text
 普通任务 / Super-agent Worker ──→ Runner ──→ OpenCode 或 Codex

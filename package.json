@@ -1,0 +1,7 @@
+{
+  "name": "harness-superagent-poc-runtime",
+  "private": true,
+  "version": "0.2.0",
+  "description": "Pinned agent CLIs for the Python bridge",
+  "dependencies": {"@opencode/cli": "2.2.5", "@openai/codex": "0.144.6"}
+}

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+POC_DIR="$(cd -- "$(dirname -- "$0")" && pwd)"
+if [ -n "${POC_PYTHON:-}" ]; then
+  POC_EXEC="$POC_PYTHON"
+elif [ -x "$POC_DIR/.venv/bin/python" ]; then
+  POC_EXEC="$POC_DIR/.venv/bin/python"
+else
+  POC_EXEC="python3.12"
+fi
+export PYTHONPATH="$POC_DIR${PYTHONPATH:+:$PYTHONPATH}"
+exec "$POC_EXEC" -m h2bridge "$@"

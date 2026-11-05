@@ -1,0 +1,7 @@
+{
+  "id": "signed-total",
+  "domain": "accounting",
+  "prompt": "Fix ledger.py so total(amounts) correctly sums signed decimal string amounts, including credits and debits. Keep the Decimal return type. Return zero for an empty list.",
+  "input_dir": "source",
+  "deliverables": ["ledger.py"]
+}

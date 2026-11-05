@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "fixture": true,
+  "real_model_used": false,
+  "harness2_commit": "6868817518876de8fd170c6a8354daca273b6191",
+  "rollouts": 4,
+  "improvement_stages": 3,
+  "base_passed": false,
+  "candidate_passed": true,
+  "shared_runner_replay_passed": true,
+  "dsh_host_verified": false,
+  "candidate_fingerprint": "6889250d46c8e23dafa144a608030ff5bacd4dc6710fabe1ee57c1b85fe856af",
+  "quality_claim": "None: executor and editor are deterministic fixtures"
+}

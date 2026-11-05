@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-04",
+  "version": "0.2.0",
+  "unit_and_integration_tests": {
+    "passed": 28,
+    "failed": 0
+  },
+  "official_harness2_opencode_fixture": "passed",
+  "official_harness2_codex_fixture": "passed_4_solvers_3_editors_and_replay",
+  "codex_worker_cli_ticket_contract": "passed",
+  "codex_environment_isolation": "passed_with_sentinel_profile",
+  "codex_timeout_and_sigterm": "passed",
+  "codex_native_cli": "not_run_locally_per_user_request; GitHub Actions job provided",
+  "github_actions": "syntax_checked; not_executed_remotely",
+  "npm_lockfile": "generated_from_metadata; npm_ci_offline_dry_run_passed",
+  "native_opencode_protocol": "passed_in_v0.1; not_rerun_in_v0.2",
+  "real_dsh_host": "not_run",
+  "real_model_quality": "not_run",
+  "same_budget_comparison": "not_run",
+  "production_config_promotion": "not_implemented",
+  "harness2_commit": "6868817518876de8fd170c6a8354daca273b6191",
+  "codex_version_target": "0.144.6",
+  "opencode_version": "2.2.5",
+  "python_version_tested": "3.12.16",
+  "external_model_calls_this_revision": 0,
+  "real_agent_binaries_installed_or_started_this_revision": false,
+  "verification_environment": "temporary Python and upstream source copy; no global installation",
+  "package_extract_and_codex_demo": "passed",
+  "workspace_runtime_cleanup": "completed; previous project-local runtimes and current temporary environment removed"
+}

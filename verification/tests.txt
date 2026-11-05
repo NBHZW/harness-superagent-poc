@@ -1,0 +1,33 @@
+test_cancellation_before_process_start_remains_cancelled (test_codex.CodexTests.test_cancellation_before_process_start_remains_cancelled) ... ok
+test_codex_rejects_runtime_configs_and_opencode_provider_options (test_codex.CodexTests.test_codex_rejects_runtime_configs_and_opencode_provider_options) ... ok
+test_codex_runs_the_real_harness2_solver_and_editor_flow (test_codex.CodexTests.test_codex_runs_the_real_harness2_solver_and_editor_flow) ... ok
+test_codex_sigterm_cancels_without_waiting_for_a_terminal_event (test_codex.CodexTests.test_codex_sigterm_cancels_without_waiting_for_a_terminal_event) ... ok
+test_error_exit_and_timeout_are_recorded (test_codex.CodexTests.test_error_exit_and_timeout_are_recorded) ... ok
+test_instruction_limit_fails_before_spending_an_execution (test_codex.CodexTests.test_instruction_limit_fails_before_spending_an_execution) ... ok
+test_launch_does_not_inherit_personal_profile_or_other_credentials (test_codex.CodexTests.test_launch_does_not_inherit_personal_profile_or_other_credentials) ... ok
+test_missing_usage_is_unknown_instead_of_a_free_run (test_codex.CodexTests.test_missing_usage_is_unknown_instead_of_a_free_run) ... ok
+test_native_trajectory_includes_tools_and_observations (test_codex.CodexTests.test_native_trajectory_includes_tools_and_observations) ... ok
+test_partial_failed_and_invalid_streams_never_pass (test_codex.CodexTests.test_partial_failed_and_invalid_streams_never_pass) ... ok
+test_tokens_final_messages_and_recoverable_tool_failure (test_codex.CodexTests.test_tokens_final_messages_and_recoverable_tool_failure) ... ok
+test_worker_cli_and_executor_option_validation (test_codex.CodexTests.test_worker_cli_and_executor_option_validation) ... ok
+test_cli_success_with_error_event_is_failure (test_poc.BridgeTests.test_cli_success_with_error_event_is_failure) ... ok
+test_executable_harness_components_are_rejected (test_poc.BridgeTests.test_executable_harness_components_are_rejected) ... ok
+test_execution_budget_and_duplicate_run_do_not_reexecute (test_poc.BridgeTests.test_execution_budget_and_duplicate_run_do_not_reexecute) ... ok
+test_existing_output_directory_is_not_reused (test_poc.BridgeTests.test_existing_output_directory_is_not_reused) ... ok
+test_malformed_events_cannot_claim_completion (test_poc.BridgeTests.test_malformed_events_cannot_claim_completion) ... ok
+test_missing_binary_is_recorded_as_failure (test_poc.BridgeTests.test_missing_binary_is_recorded_as_failure) ... ok
+test_opencode_pwd_points_at_the_isolated_workspace (test_poc.BridgeTests.test_opencode_pwd_points_at_the_isolated_workspace) ... ok
+test_partial_output_without_terminal_event_is_failure (test_poc.BridgeTests.test_partial_output_without_terminal_event_is_failure) ... ok
+test_paths_and_symlink_snapshots_are_rejected (test_poc.BridgeTests.test_paths_and_symlink_snapshots_are_rejected) ... ok
+test_real_harness2_recursion_and_shared_entry_replay (test_poc.BridgeTests.test_real_harness2_recursion_and_shared_entry_replay) ... ok
+test_sigterm_cancels_cli_and_records_result (test_poc.BridgeTests.test_sigterm_cancels_cli_and_records_result) ... ok
+test_solver_cannot_modify_original_snapshot (test_poc.BridgeTests.test_solver_cannot_modify_original_snapshot) ... ok
+test_timeout_terminates_grandchildren (test_poc.BridgeTests.test_timeout_terminates_grandchildren) ... ok
+test_uncollectable_artifacts_are_not_left_running (test_poc.BridgeTests.test_uncollectable_artifacts_are_not_left_running) ... ok
+test_worker_cli_executes_with_ticket_identity (test_poc.BridgeTests.test_worker_cli_executes_with_ticket_identity) ... ok
+test_worker_requires_a_ticket_and_enforces_its_directory (test_poc.BridgeTests.test_worker_requires_a_ticket_and_enforces_its_directory) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 4.541s
+
+OK

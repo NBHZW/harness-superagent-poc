@@ -1,0 +1,52 @@
+name: Test bridge
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  protocol-and-recursion:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install .
+      - run: python -m unittest discover -s tests -v
+      - run: python -m h2bridge demo --executor opencode --output runs/demo-opencode
+      - run: python -m h2bridge demo --executor codex --output runs/demo-codex
+
+  native-codex-protocol:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: python -m pip install .
+      - run: npm ci
+      - run: ./node_modules/.bin/codex --version
+      - run: python tests/codex_smoke.py --codex ./node_modules/.bin/codex --output runs/native-codex
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: native-codex-protocol
+          path: |
+            runs/native-codex/native-smoke-report.json
+            runs/native-codex/executions/native-smoke/events.jsonl
+            runs/native-codex/executions/native-smoke/stderr.log
+            runs/native-codex/executions/native-smoke/result.json

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "real_opencode": true,
+  "real_model": false,
+  "requests_to_loopback": 2,
+  "harness_text_loaded": true,
+  "workspace_correct": true,
+  "session_ids": [
+    "ses_e5b26930cffeTJTIjXf24p7kla"
+  ],
+  "tokens_reported": {
+    "input": 10,
+    "output": 5,
+    "reasoning": 0
+  }
+}

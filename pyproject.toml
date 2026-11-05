@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harness-superagent-poc"
+version = "0.2.0"
+description = "Shared OpenCode and Codex execution for Harness2 and DSH Super-agent workers"
+requires-python = ">=3.12,<3.14"
+dependencies = ["harness2 @ git+https://github.com/google-research/harness2.git@6868817518876de8fd170c6a8354daca273b6191"]
+
+[project.scripts]
+h2bridge = "h2bridge.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["h2bridge*"]
